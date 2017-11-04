@@ -73,5 +73,26 @@ for item in a:
 	
 	
 print(wiselist)
+
+
+#データの正規化
+himitsu_user = {}
+for dougu in himitsu:
+	himitsu_user[dougu] = 0
+	
+for i in wiselist:
+	if i[1] == 1:
+		himitsu_user[str(i)] = 1
+	else:
+		continue
+
+#知識情報の表示
+print("\nユーザの知識情報を表示します\n")
+print(himitsu_user)
+
+
+
+
+
 	
 			
