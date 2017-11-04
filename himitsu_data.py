@@ -53,7 +53,7 @@ himitsu = ["悪運ダイヤ","悪魔のパスポート","アソボウ","穴ほ�
 			
 			
 #指定道具数数ランダム抽出			
-a = random.sample(himitsu, 3)
+a = random.sample(himitsu, 50)
 
 #知識情報入力
 wiselist = []
@@ -82,7 +82,7 @@ for dougu in himitsu:
 	
 for i in wiselist:
 	if i[1] == 1:
-		himitsu_user[str(i)] = 1
+		himitsu_user[str(i[0])] = 1
 	else:
 		continue
 
