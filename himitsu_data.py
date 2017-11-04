@@ -50,3 +50,26 @@ himitsu = ["悪運ダイヤ","悪魔のパスポート","アソボウ","穴ほ�
 			"ロケットそうじゅうくんれん機","ロボ子","Yロウ","わすれとんかち","わすれろ草"]
 			
 			
+#指定道具数数ランダム抽出			
+a = random.sample(himitsu, 3)
+
+#知識情報入力
+wiselist = []
+for item in a:
+	print(item)
+	print("これを知っていれば1, 知らなければ0を入力してください")
+	data = input()
+	while 0 < 1:
+		if data == str(0):
+			break
+		elif data == str(1):
+			break
+		else:
+			print("入力しなおしてください")
+			data = input()
+	wiselist.append([item, int(data)])
+	
+	
+print(wiselist)
+	
+			
